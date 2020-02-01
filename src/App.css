@@ -1,38 +1,118 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 20px 20px 100px;
+  background-color: #f2f2f2;
+  display: block;
+  flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-box {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.auth-container {
+  background-image: linear-gradient(99deg,#ff70a6,#ff9770 40%,#ffd670 73%,#e9ff70);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-box {
+  background-image: linear-gradient(97deg,#ff7a6e,#ffd670);
+  height: 55vh;
+  width: 35vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow:  0px 10px 10px;
+}
+
+.auth-box > button {
+  width: 70px;
+}
+
+.dashboard-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.dash-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: 0 1px 2px;
+}
+
+.dash-searchbox {
+  width: 75%;
+  display: flex;
+}
+
+.content-box {
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px;
+  padding: 20px;
+}
+
+.content-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  box-shadow: 0 1px 2px;
+  border-radius: 2px;
+}
+
+.nav-bar {
+  height: 100px;
+  background-image: linear-gradient(97deg,#ff7a6e,#ffd670);
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 0 5px;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  
+}
+
+.add-form-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: calc(100% - 50px);
 }
 
-.App-link {
-  color: #61dafb;
+.add-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10%;
+  height: 80%;
+  width: 60%;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.77);
+  padding: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px;
 }
